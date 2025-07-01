@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form{
+            background-color: beige;
+            padding: 10px;
+            border: 5px solid red;
+            width: 500px;
+        }
+        label{
+float: left;
+padding-right: 10px;
+width: 100px;
+text-align: right;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+  
+   <form action="">
+    <fieldset> <legend>Student Registration Form</legend>
+
+<label for="firstName">First Name:</label>
+<input type="text" name="firstName" id="firstName" placeholder="First Name"> <br><br>
+<label for="middlename">Middle Name:</label>
+<input type="text" name="middlename" id="middlename" placeholder="nickname"><br><br>
+<label for="lastname">Last Name:</label>
+<input type="text" name="lastname" id="lastname"> <br><br>
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="Email" maxlength="5"><br><br>
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" required> <br><br>
+<label for="confirmpassword">Confirm:</label>
+<input type="password" name="confirmpassword" id="confirmpassword"><br><br>
+<label for="mobile">Mobile:</label>
+<input type="tel" name="mobile" id="mobile"><br><br>
+
+<h3>Choose your Favorite Courses</h3>
+<input type="checkbox" name="html" id="html">
+<label for="HTML">HTML</label> <br><br>
+<input type="checkbox" name="css" id="css">
+<label for="CSS">CSS</label> <br><br>
+<input type="checkbox" name="Python" id="Python" checked>
+<label for="Python">Python</label> <br><br>
+
+<h3>Select Your Gender</h3>
+<input type="radio" name="Gender"  id="male"> <!-- Same Name-->
+<label for="male">Male</label> <br>
+<input type="radio" name="Gender" id="female" checked><!-- Same Name-->
+
+<label for="female">Female</label> <br><br>
+
+<label for="comment">Comment</label>
+<textarea name="comment" id="comment">Lets know your Idea
+</textarea> <br><br>
+
+<label for="districts">Districts</label><br><br>
+<select name="districts" id="districts" size="4" multiple>
+    <option value="Select">Select</option>
+    <option value="Hodan">Hodan</option>
+    <option value="Howlwadag">Howlwadag</option>
+<option value="Deynile">Deynile</option>
+<option value="Afgooye" selected>Afgooye</option>
+<option value="Kaaran">Kaaran</option>
+</select><br><br>
+
+<label for="countries">Countries</label> <br><br>
+<input list="countries" placeholder="Select a Country">
+<datalist id="countries">
+<option> Somalia</option>
+<option> SA</option>
+<option> Sudan</option>
+<option> Senegal</option>
+<option> Saudi Arabia</option>
+</datalist> <br><br>
+
+<label for="mychoice">Choose a number b/w 1 to 10</label> <br><br>
+<input type="number" name="mychoice" 
+id="mychoice" min="1" max="10"> <br><br>
+
+<label for="mychoice">Choose a number b/w 1 to 100</label><br><br>
+Low <input type="range" name="mychoice" 
+id="mychoice" min="1" max="100"> High <br><br>
+
+<label for="Color">Choose a color</label> <br><br>
+<input type="color" name="color" id="color"> <br><br>
+
+<label for="dateofbirth">Choose Date of Birth</label><br><br>
+<input type="date" name="" id=""><br><br>
+
+<input type="submit" name="submit" id="submit" value="Send Data"> &nbsp;&nbsp;
+<input type="reset" name="Reset" id="reset" value="Clear Form Controls">
+</fieldset>
+   </form>
+</body>
+</html>
